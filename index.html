@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090910" />
+    <meta
+      name="description"
+      content="Untitled Flame — a small prototype about choosing what deserves light."
+    />
+    <title>Untitled Flame</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <p class="wordmark"><span aria-hidden="true">◆</span> Untitled Flame</p>
+        <p class="instruction" id="instruction">Move the light. Hold to make something real.</p>
+      </header>
+
+      <section class="game-frame" aria-label="Untitled Flame prototype">
+        <canvas
+          id="game"
+          width="960"
+          height="540"
+          tabindex="0"
+          aria-label="A candle rides a wandering colossus through darkness. Aim the light at one of three landmarks."
+        ></canvas>
+
+        <div class="intro" id="intro">
+          <div class="intro-copy">
+            <p class="eyebrow">A WORLD LIT ONCE</p>
+            <h1>What deserves<br />to become real?</h1>
+            <p>Beyond the flame, the world is still deciding what it will be.</p>
+            <button id="begin" type="button">Light the way <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+
+        <div class="ending" id="ending" hidden>
+          <p class="eyebrow">THE COLOSSUS REMEMBERS</p>
+          <h2 id="ending-title"></h2>
+          <p id="ending-copy"></p>
+          <button id="again" type="button">Try another possibility</button>
+        </div>
+      </section>
+
+      <footer>
+        <p id="status" aria-live="polite">Three possibilities wait beyond the light.</p>
+        <p><kbd>Mouse</kbd> aim &amp; hold <span>·</span> <kbd>←</kbd><kbd>→</kbd> aim <kbd>Space</kbd> shine</p>
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

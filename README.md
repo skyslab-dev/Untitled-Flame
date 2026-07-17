@@ -22,6 +22,18 @@ Build a short 10-minute version containing only:
 
 The prototype should answer one question: **does choosing what deserves light feel meaningful?**
 
+### Run it
+
+Open `index.html` in a browser, or serve the folder locally:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
+
+Aim with the mouse and hold the button to illuminate a possibility. Keyboard controls use the left and right arrow keys to aim and Space to shine.
+
 ## Not yet
 
 No 500-hour clock, permanent save lock, procedural world, combat, inventory, crafting, dialogue system, or finished art. Those come only after the central light-and-attention mechanic is enjoyable.
